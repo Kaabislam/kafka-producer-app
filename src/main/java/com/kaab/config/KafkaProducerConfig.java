@@ -17,7 +17,7 @@ import java.util.Map;
 public class KafkaProducerConfig {
     @Bean
     public NewTopic createTopic() {
-        return new NewTopic("kaab-topic-class", 3, (short) 1);
+        return new NewTopic("kaab-topic-specific-partition", 5, (short) 1);
     }
 
     @Bean
